@@ -1,0 +1,319 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar */
+    /* Sidebar */
+
+.sidebar {
+    width: 8rem;
+    height: 100%;
+    background-color: #eee;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+}
+
+.menu-icon {
+    margin-top: 3rem;
+    cursor:pointer
+
+}
+
+.line {
+    height: .2rem;
+    width: 2.5rem;
+    background-color: #222;
+    margin-bottom: .6rem;
+}
+
+.line-1, .line-3 {
+    width: 1.8rem;
+    transition: width .3s;
+    transition: all .4s;
+}
+
+.menu-icon:hover .line{
+    width: 2.5rem;
+}
+
+
+.social-item-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    height: 25rem;
+}
+
+.social-link {
+    font-size: 2rem;
+    color: #222;
+    transition: color .3s;
+}
+
+.social-link:hover {
+    color: #777777;
+    font-size: 3rem;
+}
+
+.year {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #555;
+}
+    /* End of sidebar */
+
+    /* Navigation */
+    .navigation {
+        /* border: dashed 2px RED; */
+        left: -32rem;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        background: linear-gradient(to bottom, rgba(20, 20, 20, 0.8), rgba(230, 213, 184, 0.5)) ,url(../images/navbar-background.png);
+        background-blend-mode: overlay, normal;
+        height: 100vh;
+        width: 40rem;
+        transition: left .8s cubic-bezier(.5,.5,.5,.5);
+    }
+
+    .navigation-header {
+        text-align: center;
+        text-shadow: 2px 2px 20px black;
+    }
+
+    .navigation-heading {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 3.5rem;
+        font-weight: 400;
+        color: white;
+    }
+
+    .navigation-search-input {
+        width: 20rem;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.5rem;
+        color: rgb(75, 73, 73);
+        letter-spacing: .1rem;
+        transition: .3s
+    }
+
+    .navigation-search-input:focus {
+        background-color: rgba(253, 213, 111, .3);
+        color: white;
+    }
+
+    .navigation-search-btn {
+        border: none;
+        border-radius: .5rem;
+        height: 3rem;
+        width: 4rem;
+        background-color: rgba(253, 213, 111, .7);
+        cursor: pointer;
+        color: white;
+        transition-duration: .3s;
+        margin-left: 1rem;
+    }
+
+    .navigation-search-btn:hover {
+        height: 3.5rem;
+        width: 4.5rem;
+    }
+
+    .navigation-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        height: 40rem;
+        padding: 0;
+    }
+
+    .navigation-item {
+        position: relative;
+    }
+
+    .navigation-link {
+        color: white;
+        text-shadow: 2px 2px 20px black;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: .3s;
+    }
+
+    .navigation-link::before {
+        content: "";
+        width: 0rem;
+        height: .2rem;
+        background-color: rgba(253, 213, 111);
+        position: absolute;
+        top: .8rem;
+        left: -3rem;
+        transition: width .5s cubic-bezier(.36,.63,.57,.68);
+    }
+
+    .navigation-link::after {
+        content: "";
+        width: 0rem;
+        height: .2rem;
+        background-color: rgba(253, 213, 111);
+        position: absolute;
+        top: .8rem;
+        right: -3rem;
+        transition: width .5s cubic-bezier(.36,.63,.57,.68);
+    }
+
+    .navigation-link:hover {        
+        color: rgba(253, 213, 111);
+    }
+
+    .navigation-link:hover::before, 
+    .navigation-link:hover::after {     
+        width: 2rem;   
+    }
+
+    .copyright{
+        color: white;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .checkbox:checked ~ .navigation {
+        left: 8rem;
+    }
+    
+    .checkbox:checked ~ .sidebar .line-1{
+        transform: rotate(-405deg) translate(-5px, 6px);
+        width: 2.5rem;
+  
+    }
+    .checkbox:checked ~ .sidebar .line-2{
+        opacity: 0;
+    }
+    .checkbox:checked ~ .sidebar .line-3{
+        transform: rotate(405deg) translate(-5px, -6px);
+        width: 2.5rem;
+    }
+        /* end of navigation */
+/* End of navbar */
+
+/* Header */
+    /* Heading */
+    .header {
+        /* border: dashed 2px red; */
+        margin-left: 8rem;
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.6)) ,url(../images/warrior.jpg) no-repeat center;
+        background-size: cover;
+
+    }
+
+    .brand{
+        /* border: dashed 2px purple; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 6rem;
+        margin: 10px 10px;
+        padding: 0px;
+    }
+    .homepage-heading {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: white;
+    }
+    /* End of Heading */
+    
+    /* Banner */
+    .banner{
+        /* border: dashed 2px yellow; */
+        color: white;
+        height: 65rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-heading {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 7rem;
+        font-weight: 400;
+        margin-bottom: 0;
+        animation: banner-anim 2s;
+    }
+
+    .banner-motto {
+        font-size: 3.5rem;
+        font-weight: 300;
+        animation: banner-anim 2s .5s backwards;
+
+    }
+
+    .banner-button {
+        width: 21rem;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        border: none;
+        border-radius: .5rem;
+        cursor: pointer;
+        background-color: rgba(253, 213, 111, .7);
+        box-shadow: 2px 2px 10px black;
+        animation: banner-anim 2s 1s backwards;
+        color: white;
+        transition: .5s;
+    }
+
+    .banner-button:hover {
+        /* background: linear-gradient(to left, gold, goldenrod); */
+        box-shadow: 2px 2px 10px white;
+    }
+
+    .banner-button:active {
+        transform: translateY(.2rem);
+    }
+
+    @keyframes banner-anim {
+        0% {
+            opacity: 0;
+        } 
+        100% {
+            opacity: 1;
+        }
+    }
+    /* End of Banner */
+/* End of Header */
+
+/* .main-body {
+    border: dashed 2px blue;
+    height:100vh;
+    background: url(../images/warrior.jpg);
+
+} */
