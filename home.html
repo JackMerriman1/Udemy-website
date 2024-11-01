@@ -65,10 +65,10 @@
 
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a href="#" class="navigation-link">Home</a>
+                    <a href="#" onclick="document.getElementById('header').scrollIntoView();"" class="navigation-link">Home</a>
                 </li>
                 <li class="navigation-item">
-                    <a href="#" class="navigation-link">About Us</a>
+                    <a href="#" onclick="document.querySelector('.about-us').scrollIntoView();" class="navigation-link">About Us</a>
                 </li>
                 <li class="navigation-item">
                     <a href="#" class="navigation-link">Media</a>
@@ -97,7 +97,7 @@
          
         <!-- Banner -->
         <div class="banner">
-            <h1 class="banner-heading">Welcome to the virtual Iron Fist</h1>
+            <h1 class="banner-heading">Welcome to the Virtual Iron Fist</h1>
             <p class="banner-motto">"Fide, sed cui vide"</p>
             <a href="https://discord.gg/ywPjEaqFST">
                 <button class="banner-button">Enlist Today</button>
@@ -105,7 +105,48 @@
         </div>
         <!-- End of Banner -->
     </header>
-    <!-- Header -->
+    <!-- End of Header -->
 
+    <!-- About us -->
+     <section class="about-us">
+        <div class="about-us-content">
+            <h1 class="about-us-heading">About Us</h1>
+            <div class="underline">
+                <div class="small-underline">
+                    
+                </div>
+                <div class="big-underline">
+                    
+                </div>
+            </div>
+            <h3 class="about-us-sub-heading">20th ABCT</h3>
+            <p class="about-us-paragraph">The 20th Armoured Brigade Combat Team is an Arma 3 HARDCORE MilSim unit based on the real British Army formation of same name.
+            <br><br>
+            Our unit takes place in the current time, where we operate using current weaponry, vehicles, and equipment of the British Armed Forces. Our primary role, armoured infantry, sees the infantry sections fighting with and out of the FV510 Warrior IFV.
+            <br><br>    
+            The current regiments are 5 RIFLES and C Sqn, Queen's Royal Hussars. The Reserves are represented by 7 RIFLES.
+            <br><br>
+            We utilise real world tactics employed by the British Armed Forces to the best of our abilities, and conduct professional training and advancement courses to keep everyone up to scratch on their drills and skills.
+            <br><br>   
+            In order to make the whole experience as realistic as possible we have a team of developers working to create custom assets, uniforms and vehicles. We also have a number of current and former service members of British and NATO Armed Forces providing a unique background and skillset for the unit.
+            <br><br>    
+            We are in no way associated with the real 20th Armoured Brigade Combat Team, the British Army, or the UK Ministry of Defence.</p>
+            <button class="about-us-button">read more
+                <i class= "fas fa-angle-double-right btn-arrow"></i>
+            </button>
+        </div>
+
+        <div class="about-us-images">
+            <img src="images/bulldog.png" class="image image-1">
+            <img src="images/warrior-2.png" class="image image-2">
+            <img src="images/gpmg.png" class="image image-3">
+            <img src="images/challenger.png" class="image image-4">
+        </div>
+     </section>
+     <!-- End of About Us -->
+
+     <!-- Media -->
+
+     <!--  -->
 </body>
 </html>

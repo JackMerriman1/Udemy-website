@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -310,6 +311,164 @@ body {
     }
     /* End of Banner */
 /* End of Header */
+/* ------------------------------------------------*/
+/* About us */
+
+.about-us {
+    /* border: dashed 2px green; */
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #ddd;
+
+
+}
+    /* About us Content */
+.about-us-content {
+    /* border: dashed 2px red; */
+
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    box-sizing: border-box;
+}
+
+.about-us-heading {
+    /* border: dashed 2px yellow; */
+
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #555;
+
+}
+
+        /* Underline */
+
+/* .underline {
+     border: dashed 2px purple; 
+
+} */
+
+.small-underline {
+    width: 9rem;
+    height: .1rem;
+    background-color: rgb(184, 133, 4);
+    margin: 0 auto 1rem auto;
+}
+
+.big-underline {
+    width: 20rem;
+    height: .1rem;
+    background-color: rgb(184, 133, 4);
+}
+        /* End of Underline */
+
+.about-us-sub-heading {
+    /* border: dashed 2px blue; */
+
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(184, 133, 4);
+    letter-spacing: .2rem;
+}
+
+.about-us-paragraph {
+    /* border: dashed 2px blue; */
+
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    color: #555;
+    margin-bottom: 5rem;
+
+}
+
+.about-us-button {
+    width: 20rem;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: rgb(184, 133, 4);
+    background-color: transparent;
+    border: solid .1rem rgb(184, 133, 4);
+    border-radius: .5rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #ddd;
+    transition: .4s;
+}
+
+.about-us-button:hover {
+    box-shadow: 2px 2px 10px rgb(184, 133, 4);
+}
+.about-us-button:active {
+    transform: translateY(.2rem);
+}
+
+.about-us-button:hover .btn-arrow{
+    margin-left: 1.5rem;
+}
+
+.btn-arrow {
+    margin-left: 1rem;
+    transition: margin-left .3s;
+}
+    /* End of about us content */
+    
+    /* About us images */
+.about-us-images {
+    flex: 1 1;
+    position: relative;
+
+}
+
+.about-us-images .image {
+    width: 100%;
+    width: 32rem;
+    position: absolute;
+    border-radius: 1rem;
+    top: 50%;
+    left: 50%;
+    transition: .5s;
+    box-shadow: 2px 2px 10px black;
+    border: solid 2px  rgb(184, 133, 4);
+}
+
+.about-us-images .image-1 {
+    z-index: 1;
+}
+
+.about-us-images .image-2 {
+    transform: translate(-100%, -100%);
+    z-index: 2;
+
+}
+
+.about-us-images .image-3 {
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+}
+
+.about-us-images .image-4 {
+    transform: translate(-15%, -90%);
+    z-index: 0;
+}
+
+.about-us-images .image:hover {
+    z-index: 5;
+    width: 50rem;
+    box-shadow: 2px 2px 10px rgb(184, 133, 4);
+}
+    /* End of about us images */
+/* End of about us */
 
 /* .main-body {
     border: dashed 2px blue;
