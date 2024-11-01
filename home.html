@@ -55,23 +55,23 @@
             <div class="navigation-header">
                 <h1 class="navigation-heading">20th ABCT</h1>
 
-                <form class="navigation-search">
+                <!-- <form class="navigation-search">
                     <input type="text" class="navigation-search-input" placeholder="search">
                     <button class="navigation-search-btn">
                         <i class="fas fa-search"></i>
                     </button>
-                </form>
+                </form> -->
             </div>
 
             <ul class="navigation-list">
                 <li class="navigation-item">
-                    <a href="#" onclick="document.getElementById('header').scrollIntoView();"" class="navigation-link">Home</a>
+                    <a href="#" onclick= "event.preventDefault(); document.getElementById('header').scrollIntoView();" class="navigation-link">Home</a>
                 </li>
                 <li class="navigation-item">
-                    <a href="#" onclick="document.querySelector('.about-us').scrollIntoView();" class="navigation-link">About Us</a>
+                    <a href="#" onclick="event.preventDefault(); document.getElementById('about-us').scrollIntoView();" class="navigation-link">About Us</a>
                 </li>
                 <li class="navigation-item">
-                    <a href="#" onclick="document.querySelector('.media').scrollIntoView();" class="navigation-link">Media</a>
+                    <a href="#" onclick="event.preventDefault(); document.getElementById('media').scrollIntoView();" class="navigation-link">Media</a>
                 </li>
             </ul>
 
@@ -84,7 +84,7 @@
     <!-- end of navbar-->
 
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
 
         <!-- heading -->
         <div class="brand">
@@ -108,7 +108,7 @@
     <!-- End of Header -->
 
     <!-- About us -->
-     <section class="about-us">
+     <section class="about-us" id="about-us">
         <div class="about-us-content">
             <h1 class="about-us-heading">About Us</h1>
             <div class="underline">
@@ -127,9 +127,9 @@
             In order to make the whole experience as realistic as possible we have a team of developers working to create custom assets, uniforms and vehicles. We also have a number of current and former service members of British and NATO Armed Forces providing a unique background and skillset for the unit.
             <br><br>    
             We are in no way associated with the real 20th Armoured Brigade Combat Team, the British Army, or the UK Ministry of Defence.</p>
-            <button class="about-us-button">read more
+            <!-- <button class="about-us-button" role="button">read more
                 <i class= "fas fa-angle-double-right btn-arrow"></i>
-            </button>
+            </button> -->
         </div>
 
         <div class="about-us-images">
@@ -142,7 +142,7 @@
      <!-- End of About Us -->
 
      <!-- Media -->
-      <section class="media">
+      <section class="media" id="media">
         <!-- Media Header -->
         <div class="media-header">
             <h1 class="media-heading">Media</h1>

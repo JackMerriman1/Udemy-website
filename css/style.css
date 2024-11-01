@@ -107,7 +107,7 @@ body {
         color: white;
     }
 
-    .navigation-search-input {
+    /* .navigation-search-input {
         width: 20rem;
         padding: 1rem 2rem;
         border-radius: .5rem;
@@ -138,7 +138,7 @@ body {
     .navigation-search-btn:hover {
         height: 3.5rem;
         width: 4.5rem;
-    }
+    } */
 
     .navigation-list {
         display: flex;
@@ -384,7 +384,7 @@ body {
 
 }
 
-.about-us-button {
+/* .about-us-button {
     width: 20rem;
     padding: 1rem;
     font-family: "Montserrat", sans-serif;
@@ -393,21 +393,20 @@ body {
     background-color: transparent;
     border: solid .1rem rgb(184, 133, 4);
     border-radius: .5rem;
+    box-shadow: 2px 2px 10px rgb(184, 133, 4);
+    transition: all .4s;
     cursor: pointer;
-    box-shadow: 2px 2px 10px #ddd;
-    transition: .4s;
 }
 
-.about-us-button:hover {
-    box-shadow: 2px 2px 10px rgb(184, 133, 4);
-}
+
 .about-us-button:active {
     transform: translateY(.2rem);
+    box-shadow: 0px 0px 2px rgb(184, 133, 4);
 }
 
 .about-us-button:hover .btn-arrow{
     margin-left: 1.5rem;
-}
+} */
 
 .btn-arrow {
     margin-left: 1rem;
